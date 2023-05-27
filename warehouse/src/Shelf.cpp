@@ -38,13 +38,9 @@ bool Shelf::swapPallet(int index0, int index1){
     Pallet temp = this->pallets[index0];
     this->pallets[index0] = this->pallets[index1];
     this->pallets[index1] = temp;
+    std::cout << "pallet swapped";
     return true;
 };
-
-
-// std::array<Pallet, 4> Shelf::getPallet() {
-//     // use loop to print item counts from pallets
-// }
 
 Shelf::Shelf() {
     Shelf::pallets = {};
