@@ -26,7 +26,7 @@ bool Warehouse::pickItems(std::string itemName, int itemCount) {
 
             for (int j = 0; j < itemCount; j++) {
                 if (shelves[i].pallets[j].getItemCount() < itemCount && shelves[i].pallets[j].getItemName() == itemName) {
-                    for(int l; l < shelves[i].pallets[j].getItemCount(); l--) {
+                    for(int l = shelves[i].pallets[j].getItemCount(); l < shelves[i].pallets[j].getItemCount(); l--) {
                         shelves[i].pallets[j].takeOne();
                         itemCount--;
                     };
@@ -53,16 +53,12 @@ bool Warehouse::rearrangeShelf(Shelf& givenShelf) {
         return false;
     }
     else {
-        for (int i = 0; i < givenShelf.pallets.size() * 4; i++) {
+        for (int i = 0; i < givenShelf.pallets.size()-1; i++) {
 
-            for (int j = 0; j < givenShelf.pallets.size(); j++) {
+            for (int j = 0; j < givenShelf.pallets.size()-1; j++) {
                 
-                // std::cout << shelf.pallets[i].getItemCount() << std::endl;
-                // std::cout << shelf.pallets[i + 1].getItemCount() << std::endl;
-
                 if (givenShelf.pallets[j].getItemCount() > givenShelf.pallets[j + 1].getItemCount()) {
                     givenShelf.swapPallet(j, (j + 1));
-
                 }
             }
         }
