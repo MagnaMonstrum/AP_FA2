@@ -39,5 +39,6 @@ void Employee::setForkliftCertificate(bool forkliftCertificate) {
 /// @param forkliftCertificate hiermee wordt de forkliftCertificate status van de employee bepaald.
 Employee::Employee(std::string const name, bool forkliftCertificate):
     name(name),
-    forkliftCertificate(forkliftCertificate)  
+    forkliftCertificate(forkliftCertificate),
+    busy(false)  
 {};
