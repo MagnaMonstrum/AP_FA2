@@ -48,11 +48,11 @@ bool Warehouse::rearrangeShelf(Shelf& shelf) {
             availableEmployee = true;            
         }
     }
-    if (!availableEmployee) {
+    if (availableEmployee == false) {
         return false;
     }
     else {
-        for (int i = 0; i < shelf.pallets.size()-1; i++){
+        for (int i = 0; i < shelf.pallets.size()-1; i++) {
             for (int i = 0; i < shelf.pallets.size()-1; i++) {
                 if (shelf.pallets[i].getItemCount() > shelf.pallets[i + 1].getItemCount()) {
                     shelf.swapPallet(i, (i + 1));
@@ -61,7 +61,6 @@ bool Warehouse::rearrangeShelf(Shelf& shelf) {
         }
         return true;
     }
-
 }
 
 std::vector<Shelf> Warehouse::getShelves() {

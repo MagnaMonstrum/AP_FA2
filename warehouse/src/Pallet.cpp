@@ -58,7 +58,7 @@ bool Pallet::isFull() {
 
 
 
-Pallet::Pallet(std::string itemName, int itemCount,  int itemCapacity):
+Pallet::Pallet(std::string itemName, int itemCapacity, int itemCount):
     itemCount(itemCount),
     itemName(itemName),
     itemCapacity(itemCapacity)

@@ -19,6 +19,6 @@ class Pallet : public iContainer
         bool putOne();
         bool isEmpty();
         bool isFull();
-        Pallet(std::string itemName, int itemCount, int itemCapacity);
+        Pallet(std::string itemName, int itemCapacity, int itemCount);
         Pallet();
 };
