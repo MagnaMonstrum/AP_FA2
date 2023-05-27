@@ -41,41 +41,27 @@ bool Warehouse::pickItems(std::string itemName, int itemCount) {
  
 bool Warehouse::rearrangeShelf(Shelf& shelf) {
     
-    std::vector<int> palletValues = {};
-    std::array<Pallet, 100> newPallets = {};
+    bool availableEmployee = false;
 
-    int min;
-    
-    for (int i = 0; i < shelf.pallets.size(); i++) {
-
-        int itemsTotal = 0;
-
-        for (int j = 0; j < shelf.pallets.size(); j++) {
-            itemsTotal += shelf.pallets[j].getItemCount();                 
+    for (Employee employee : this->employeeList) {
+        if (employee.getForkliftCertificate() == true && employee.getBusy() == false) {
+            availableEmployee = true;            
         }
-
-        palletValues.push_back(itemsTotal);
     }
-    
-    min = *std::min_element(palletValues.begin(), palletValues.end());
-
-    for (int i = 0; i < palletValues.size(); i++) {
-        
-        if (palletValues[i] == min && palletValues[i] > -1) {
-            min = *std::min_element(palletValues.begin(), palletValues.end());
-            newPallets[newPallets.size()] = shelf.pallets[i];
-            palletValues.erase(palletValues.begin()+i);
-            palletValues[i] = -1;
+    if (!availableEmployee) {
+        return false;
+    }
+    else {
+        for (int i = 0; i < shelf.pallets.size()-1; i++){
+            for (int i = 0; i < shelf.pallets.size()-1; i++) {
+                if (shelf.pallets[i].getItemCount() > shelf.pallets[i + 1].getItemCount()) {
+                    shelf.swapPallet(i, (i + 1));
+                }
+            }
         }
-
+        return true;
     }
 
-    for (int i = 0; i < shelf.pallets.size(); i++) {
-        shelf.pallets[i] = newPallets[i];
-        std::cout << &newPallets[i];
-    }
-
-    return true;
 }
 
 std::vector<Shelf> Warehouse::getShelves() {
