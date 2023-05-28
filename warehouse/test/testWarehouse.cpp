@@ -248,9 +248,9 @@ TEST_CASE("pickItems take half of first pallet", "Warehouse::pickItems") {
     Shelf shelf1 = Shelf();
     shelf1.pallets = {
         Pallet("Books", 100, 20), 
-        Pallet("Books", 100, 40), 
-        Pallet("Books", 100, 30), 
-        Pallet("Books", 100, 10)
+        Pallet(), 
+        Pallet(), 
+        Pallet()
     };
     
     Employee bert = Employee("Bert", true);
@@ -274,8 +274,8 @@ TEST_CASE("pickItems take all of first pallet and half of second pallet", "Wareh
     shelf1.pallets = {
         Pallet("Books", 100, 20), 
         Pallet("Books", 100, 40), 
-        Pallet("Books", 100, 30), 
-        Pallet("Books", 100, 10)
+        Pallet(), 
+        Pallet()
     };
     
     Employee bert = Employee("Bert", true);
@@ -289,5 +289,33 @@ TEST_CASE("pickItems take all of first pallet and half of second pallet", "Wareh
 
     REQUIRE(warehouse.shelves[0].pallets[0].getItemCount() == 0);
     REQUIRE(warehouse.shelves[0].pallets[1].getItemCount() == 20);
+
+}
+
+
+TEST_CASE("pickItems take all items", "Warehouse::pickItems") {
+    Warehouse warehouse = Warehouse();
+    
+    Shelf shelf1 = Shelf();
+    shelf1.pallets = {
+        Pallet("Books", 100, 20), 
+        Pallet("Books", 100, 40), 
+        Pallet("Books", 100, 30), 
+        Pallet("Books", 100, 10)
+    };
+    
+    Employee bert = Employee("Bert", true);
+    
+    warehouse.addEmployee(bert);
+    warehouse.addShelf(shelf1);
+
+    bool successful = warehouse.pickItems("Books", 100);
+    
+    REQUIRE(successful);
+
+    REQUIRE(warehouse.shelves[0].pallets[0].getItemCount() == 0);
+    REQUIRE(warehouse.shelves[0].pallets[1].getItemCount() == 0);
+    REQUIRE(warehouse.shelves[0].pallets[2].getItemCount() == 0);
+    REQUIRE(warehouse.shelves[0].pallets[3].getItemCount() == 0);
 
 }
