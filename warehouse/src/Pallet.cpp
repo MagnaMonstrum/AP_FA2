@@ -1,5 +1,5 @@
-#include "Pallet.hpp"
-#include "iContainer.hpp"
+#include "..\src\include\Pallet.hpp"
+#include "..\src\include\iContainer.hpp"
 #include <iostream>
 
 std::string Pallet::getItemName() {

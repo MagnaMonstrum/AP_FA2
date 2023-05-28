@@ -1,10 +1,8 @@
-#include "Employee.hpp"
+#include "..\src\include\Employee.hpp"
 #include  <iostream>
 
 
 std::string Employee::getName() {
-    /// @brief
-    /// returned de naam van een employee.  
     return this->name;
 };
 

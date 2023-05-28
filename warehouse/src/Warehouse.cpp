@@ -1,6 +1,6 @@
-#include "Warehouse.hpp"
-#include "Employee.hpp"
-#include "Shelf.hpp"
+#include "..\src\include\Warehouse.hpp"
+#include "..\src\include\Employee.hpp"
+#include "..\src\include\Shelf.hpp"
 #include <bits/stdc++.h> 
 
 void Warehouse::addEmployee(Employee employee) {

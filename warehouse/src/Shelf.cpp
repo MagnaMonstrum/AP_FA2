@@ -1,5 +1,5 @@
-#include "Shelf.hpp"
-#include "Pallet.hpp"
+#include "..\src\include\Shelf.hpp"
+#include "..\src\include\Pallet.hpp"
 #include <iostream>
 
 std::array<bool, 4> Shelf::getSlotStatus() {
