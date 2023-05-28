@@ -38,7 +38,6 @@ bool Shelf::swapPallet(int index0, int index1){
     Pallet temp = this->pallets[index0];
     this->pallets[index0] = this->pallets[index1];
     this->pallets[index1] = temp;
-    std::cout << "pallet swapped";
     return true;
 };
 

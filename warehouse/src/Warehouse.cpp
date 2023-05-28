@@ -13,21 +13,23 @@ void Warehouse::addShelf(Shelf shelf) {
 
 bool Warehouse::pickItems(std::string itemName, int itemCount) {
     int targetCount = 0;
-    for (int i = 0; i < shelves.size(); i++) {
-        for (int j = 0; j < shelves[i].pallets.size(); j++) {
-            if (shelves[i].pallets[j].getItemName() == itemName) {
-                targetCount += shelves[i].pallets[j].getItemCount();
+    for (int i = 0; i < this->shelves.size(); i++) {
+        for (int j = 0; j < this->shelves[i].pallets.size(); j++) {
+            if (this->shelves[i].pallets[j].getItemName() == itemName) {
+                targetCount += this->shelves[i].pallets[j].getItemCount();
             }
         };
     };
 
     if (targetCount >= itemCount) {
-        for (int i = 0; i < shelves.size(); i++) {
+        for (int i = 0; i < this->shelves.size(); i++) {
 
             for (int j = 0; j < itemCount; j++) {
-                if (shelves[i].pallets[j].getItemCount() < itemCount && shelves[i].pallets[j].getItemName() == itemName) {
-                    for(int l = shelves[i].pallets[j].getItemCount(); l < shelves[i].pallets[j].getItemCount(); l--) {
-                        shelves[i].pallets[j].takeOne();
+                if (this->shelves[i].pallets[j].getItemName() == itemName) {
+                    for(int l = this->shelves[i].pallets[j].getItemCount(); l < this->shelves[i].pallets[j].getItemCount(); l--) {
+                        if (this->shelves[i].pallets[j].getItemCount() == 0) { break; }
+
+                        this->shelves[i].pallets[j].takeOne();
                         itemCount--;
                     };
                 };
