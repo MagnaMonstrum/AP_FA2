@@ -242,7 +242,7 @@ TEST_CASE("Rearrange shelf with quallified, but busy, employee", "Warehouse::rea
     REQUIRE(warehouse.shelves[0].pallets[3].getItemCount() == 10);
 }
 
-TEST_CASE("pickItems", "Warehouse::pickItems") {
+TEST_CASE("pickItems take half of first pallet", "Warehouse::pickItems") {
     Warehouse warehouse = Warehouse();
     
     Shelf shelf1 = Shelf();
@@ -262,6 +262,32 @@ TEST_CASE("pickItems", "Warehouse::pickItems") {
     
     REQUIRE(successful);
 
-    //REQUIRE(warehouse.shelves[0].pallets[0].getItemCount() == 10);
+    REQUIRE(warehouse.shelves[0].pallets[0].getItemCount() == 10);
+    
+
+}
+
+TEST_CASE("pickItems take all of first pallet and half of second pallet", "Warehouse::pickItems") {
+    Warehouse warehouse = Warehouse();
+    
+    Shelf shelf1 = Shelf();
+    shelf1.pallets = {
+        Pallet("Books", 100, 20), 
+        Pallet("Books", 100, 40), 
+        Pallet("Books", 100, 30), 
+        Pallet("Books", 100, 10)
+    };
+    
+    Employee bert = Employee("Bert", true);
+    
+    warehouse.addEmployee(bert);
+    warehouse.addShelf(shelf1);
+
+    bool successful = warehouse.pickItems("Books", 40);
+    
+    REQUIRE(successful);
+
+    REQUIRE(warehouse.shelves[0].pallets[0].getItemCount() == 0);
+    REQUIRE(warehouse.shelves[0].pallets[1].getItemCount() == 20);
 
 }

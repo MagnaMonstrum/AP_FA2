@@ -22,13 +22,18 @@ bool Warehouse::pickItems(std::string itemName, int itemCount) {
     };
 
     if (targetCount >= itemCount) {
+
         for (int i = 0; i < this->shelves.size(); i++) {
 
-            for (int j = 0; j < itemCount; j++) {
-                if (this->shelves[i].pallets[j].getItemName() == itemName) {
-                    for(int l = this->shelves[i].pallets[j].getItemCount(); l < this->shelves[i].pallets[j].getItemCount(); l--) {
-                        if (this->shelves[i].pallets[j].getItemCount() == 0) { break; }
+            for (int j = 0; j < this->shelves[i].pallets.size(); j++) {
 
+                if (this->shelves[i].pallets[j].getItemName() == itemName) {
+                 
+                    for(int l = this->shelves[i].pallets[j].getItemCount(); l <= this->shelves[i].pallets[j].getItemCount(); l--) {
+
+                        if (itemCount == 0) { return true; }
+                        else if (this->shelves[i].pallets[j].isEmpty() == true) { break; }
+                        
                         this->shelves[i].pallets[j].takeOne();
                         itemCount--;
                     };
@@ -71,4 +76,8 @@ bool Warehouse::rearrangeShelf(Shelf& givenShelf) {
 std::vector<Shelf> Warehouse::getShelves() {
     return this->shelves;
 }
-Warehouse::Warehouse() {}
+
+Warehouse::Warehouse():
+    shelves( {} ),
+    employeeList( {} )
+{};
