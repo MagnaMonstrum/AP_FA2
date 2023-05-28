@@ -6,8 +6,13 @@
 class Pallet : public iContainer
 {
     private:
+        /// @brief int om de hoeveelheid items in een pallet te bewaren.
         mutable int itemCount;
+
+        /// @brief string om de naam van het bewaarde item in een shelf te bewaren.
         mutable std::string itemName;
+
+        /// @brief int om de maximum capaciteit van de pallet te bewaren.
         mutable int itemCapacity;
 
     public:

@@ -2,31 +2,23 @@
 #include "..\src\include\Pallet.hpp"
 #include <iostream>
 
-std::array<bool, 4> Shelf::getSlotStatus() {
-    return this->palletStatus;
-}
 
 bool Shelf::isEmpty() {
-
-    std::array<bool, 4> y = {false, false, false, false};
-
-    if (this->getSlotStatus() == y) {
-        return true;
+    for (int i = 0; i < this->pallets.size(); i++) {
+        if (!this->pallets[i].isEmpty()) {
+            return false;
+        }
     }
-    else {
-        return false;
-    };
+    return true;
 };
 
 bool Shelf::isFull() {
-    std::array<bool, 4> y = {true, true, true, true};
-
-    if (this->getSlotStatus() == y) {
-        return true;
+    for (int i = 0; i < this->pallets.size(); i++) {
+        if (!this->pallets[i].isFull()) {
+            return false;
+        }
     }
-    else {
-        return false;
-    };
+    return true;
 };
 
 bool Shelf::swapPallet(int index0, int index1){

@@ -5,8 +5,14 @@
 class Employee 
 {
     private:
+
+        /// @brief string om de naam van de employee te bewaren.
         std::string const name;
+
+        /// @brief boolean om bij te houden of de employee bezig is of niet.
         bool busy;
+
+        /// @brief boolean om bij te houden of de employee een heftruckcertificaat heeft.
         bool forkliftCertificate;
 
     public:
