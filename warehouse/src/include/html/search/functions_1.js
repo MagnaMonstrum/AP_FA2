@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['setbusy_0',['setBusy',['../class_employee.html#a18a5bb955aae9fe74b85647db202a2cf',1,'Employee']]]
+  ['isempty_0',['isEmpty',['../class_pallet.html#a8a8f03904881997a9a38c2efa52091e1',1,'Pallet']]],
+  ['isfull_1',['isFull',['../class_pallet.html#ac8740362936aca41a95a96165b80ef77',1,'Pallet']]]
 ];

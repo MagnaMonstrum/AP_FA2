@@ -7,9 +7,7 @@ std::array<bool, 4> Shelf::getSlotStatus() {
 }
 
 bool Shelf::isEmpty() {
-    /// @brief 
-    /// deze functie maakt gebruik van de getslotStatus methode om te checken of alle plekken in een shelf leeg zijn. Dit wordt gedaan door te kijken naar een andere lijst die altijd leeg is (y) en deze te vergelijken met de huidige status.
-    /// @return als de lijst leeg is dan wordt true gereturned zo niet dan wordt false gereturned.
+
     std::array<bool, 4> y = {false, false, false, false};
 
     if (this->getSlotStatus() == y) {
@@ -21,9 +19,6 @@ bool Shelf::isEmpty() {
 };
 
 bool Shelf::isFull() {
-    /// @brief 
-    /// deze functie maakt gebruik van de getslotStatus methode om te checken of alle plekken in een shelf leeg zijn. Dit wordt gedaan door te kijken naar een andere lijst die altijd vol is (y) en deze te vergelijken met de huidige status.
-    /// @return als de lijst vol is dan wordt true gereturned zo niet dan wordt false gereturned.
     std::array<bool, 4> y = {true, true, true, true};
 
     if (this->getSlotStatus() == y) {

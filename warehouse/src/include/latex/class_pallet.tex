@@ -9,40 +9,80 @@ Inheritance diagram for Pallet\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_pallet_a5dd9952545953a756c9facf8a6865b13}\label{class_pallet_a5dd9952545953a756c9facf8a6865b13}} 
-std\+::string {\bfseries get\+Item\+Name} ()
-\item 
-\mbox{\Hypertarget{class_pallet_a6fb72d96f65cc75e7b29beb386a255dc}\label{class_pallet_a6fb72d96f65cc75e7b29beb386a255dc}} 
-int {\bfseries get\+Item\+Count} ()
-\item 
-\mbox{\Hypertarget{class_pallet_aa8e3b0089ab3b1ccc5cc68df88133da8}\label{class_pallet_aa8e3b0089ab3b1ccc5cc68df88133da8}} 
-int {\bfseries get\+Remaining\+Space} ()
-\item 
-\mbox{\Hypertarget{class_pallet_ae274fa61722357a8f0adcb5a569ff9fc}\label{class_pallet_ae274fa61722357a8f0adcb5a569ff9fc}} 
-bool {\bfseries reallocate\+Empty\+Pallet} (std\+::string item\+Name, int item\+Capacity)
-\item 
-\mbox{\Hypertarget{class_pallet_a30a95ee46e5459bbc6c61ffd76e084ba}\label{class_pallet_a30a95ee46e5459bbc6c61ffd76e084ba}} 
-bool {\bfseries take\+One} ()
-\item 
-\mbox{\Hypertarget{class_pallet_a94d718d10bc43554cfd7e9e35c13e43b}\label{class_pallet_a94d718d10bc43554cfd7e9e35c13e43b}} 
-bool {\bfseries put\+One} ()
-\item 
+std\+::string \mbox{\hyperlink{class_pallet_a5dd9952545953a756c9facf8a6865b13}{get\+Item\+Name}} ()
+\begin{DoxyCompactList}\small\item\em methode om de naam van de item waarmee pallet gevuld is te returnen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_pallet_a6fb72d96f65cc75e7b29beb386a255dc}{get\+Item\+Count}} ()
+\begin{DoxyCompactList}\small\item\em methode om de de hoeveelheid items op de pallet te returnen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_pallet_aa8e3b0089ab3b1ccc5cc68df88133da8}{get\+Remaining\+Space}} ()
+\begin{DoxyCompactList}\small\item\em methode om de hoeveelheid vrije plekken te returnen. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pallet_ae274fa61722357a8f0adcb5a569ff9fc}{reallocate\+Empty\+Pallet}} (std\+::string item\+Name, int item\+Capacity)
+\begin{DoxyCompactList}\small\item\em methode om te checken of een pallet leeg is, als deze leeg is geven we een nieuwe item aan de pallet met een nieuwe capaciteit. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pallet_a30a95ee46e5459bbc6c61ffd76e084ba}{take\+One}} ()
+\begin{DoxyCompactList}\small\item\em methode om 1 item van de hoeveelheid items op de pallet af te halen. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pallet_a94d718d10bc43554cfd7e9e35c13e43b}{put\+One}} ()
+\begin{DoxyCompactList}\small\item\em methode om 1 item toetevoegen aan de hoeveelheid items op de pallet. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_pallet_a8a8f03904881997a9a38c2efa52091e1}{is\+Empty}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em methode om te checken of een pallet leeg is. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_pallet_ac8740362936aca41a95a96165b80ef77}{is\+Full}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em methode om te checken of een pallet niet leeg is. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_pallet_aec20566b32678e9f04a749d2162592cc}\label{class_pallet_aec20566b32678e9f04a749d2162592cc}} 
 {\bfseries Pallet} (std\+::string item\+Name, int item\+Capacity, int item\+Count)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pallet_a6fb72d96f65cc75e7b29beb386a255dc}\label{class_pallet_a6fb72d96f65cc75e7b29beb386a255dc}} 
+\index{Pallet@{Pallet}!getItemCount@{getItemCount}}
+\index{getItemCount@{getItemCount}!Pallet@{Pallet}}
+\doxysubsubsection{\texorpdfstring{getItemCount()}{getItemCount()}}
+{\footnotesize\ttfamily int Pallet\+::get\+Item\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+methode om de de hoeveelheid items op de pallet te returnen. 
+
+\begin{DoxyReturn}{Returns}
+een int die gelijkstaat aan de hoeveelheid items op de pallet. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pallet_a5dd9952545953a756c9facf8a6865b13}\label{class_pallet_a5dd9952545953a756c9facf8a6865b13}} 
+\index{Pallet@{Pallet}!getItemName@{getItemName}}
+\index{getItemName@{getItemName}!Pallet@{Pallet}}
+\doxysubsubsection{\texorpdfstring{getItemName()}{getItemName()}}
+{\footnotesize\ttfamily std\+::string Pallet\+::get\+Item\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+methode om de naam van de item waarmee pallet gevuld is te returnen. 
+
+\begin{DoxyReturn}{Returns}
+naam van de item waar de pallet mee gevuld is. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pallet_aa8e3b0089ab3b1ccc5cc68df88133da8}\label{class_pallet_aa8e3b0089ab3b1ccc5cc68df88133da8}} 
+\index{Pallet@{Pallet}!getRemainingSpace@{getRemainingSpace}}
+\index{getRemainingSpace@{getRemainingSpace}!Pallet@{Pallet}}
+\doxysubsubsection{\texorpdfstring{getRemainingSpace()}{getRemainingSpace()}}
+{\footnotesize\ttfamily int Pallet\+::get\+Remaining\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+methode om de hoeveelheid vrije plekken te returnen. 
+
+\begin{DoxyReturn}{Returns}
+int die gelijkstaat aan de capaciteit van de pallet min de hoeveel items op de pallet. het aantal vrije plekken dus. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_pallet_a8a8f03904881997a9a38c2efa52091e1}\label{class_pallet_a8a8f03904881997a9a38c2efa52091e1}} 
 \index{Pallet@{Pallet}!isEmpty@{isEmpty}}
 \index{isEmpty@{isEmpty}!Pallet@{Pallet}}
 \doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
 {\footnotesize\ttfamily bool Pallet\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+methode om te checken of een pallet leeg is. 
+
+\begin{DoxyReturn}{Returns}
+true als de item\+Count van de pallet leeg is. false als dat niet zo is 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classi_container}{i\+Container}}.
@@ -55,8 +95,61 @@ Implements \mbox{\hyperlink{classi_container}{i\+Container}}.
 
 
 
+methode om te checken of een pallet niet leeg is. 
+
+\begin{DoxyReturn}{Returns}
+true als de pallet een item\+Name heeft (dit betekent dat deze is ingenomen door een item). false als dat niet zo is 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classi_container}{i\+Container}}.
 
+\mbox{\Hypertarget{class_pallet_a94d718d10bc43554cfd7e9e35c13e43b}\label{class_pallet_a94d718d10bc43554cfd7e9e35c13e43b}} 
+\index{Pallet@{Pallet}!putOne@{putOne}}
+\index{putOne@{putOne}!Pallet@{Pallet}}
+\doxysubsubsection{\texorpdfstring{putOne()}{putOne()}}
+{\footnotesize\ttfamily bool Pallet\+::put\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+methode om 1 item toetevoegen aan de hoeveelheid items op de pallet. 
+
+\begin{DoxyReturn}{Returns}
+true als het gelukt om 1 item toetevoegen aan de pallet. false als dat niet gelukt is. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pallet_ae274fa61722357a8f0adcb5a569ff9fc}\label{class_pallet_ae274fa61722357a8f0adcb5a569ff9fc}} 
+\index{Pallet@{Pallet}!reallocateEmptyPallet@{reallocateEmptyPallet}}
+\index{reallocateEmptyPallet@{reallocateEmptyPallet}!Pallet@{Pallet}}
+\doxysubsubsection{\texorpdfstring{reallocateEmptyPallet()}{reallocateEmptyPallet()}}
+{\footnotesize\ttfamily bool Pallet\+::reallocate\+Empty\+Pallet (\begin{DoxyParamCaption}\item[{std\+::string}]{item\+Name,  }\item[{int}]{item\+Capacity }\end{DoxyParamCaption})}
+
+
+
+methode om te checken of een pallet leeg is, als deze leeg is geven we een nieuwe item aan de pallet met een nieuwe capaciteit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Name} & string om een nieuwe item\+Name te zetten. \\
+\hline
+{\em item\+Capacity} & int om een nieuwe capaciteit te zetten. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true als het gelukt is om een nieuwe item op de pallet te leggen, false als dit niet gelukt is. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pallet_a30a95ee46e5459bbc6c61ffd76e084ba}\label{class_pallet_a30a95ee46e5459bbc6c61ffd76e084ba}} 
+\index{Pallet@{Pallet}!takeOne@{takeOne}}
+\index{takeOne@{takeOne}!Pallet@{Pallet}}
+\doxysubsubsection{\texorpdfstring{takeOne()}{takeOne()}}
+{\footnotesize\ttfamily bool Pallet\+::take\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+methode om 1 item van de hoeveelheid items op de pallet af te halen. 
+
+\begin{DoxyReturn}{Returns}
+true als het gelukt om 1 item van de pallet af te halen (als er meer dan 0 items op de pallet liggen). 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

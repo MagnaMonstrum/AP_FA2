@@ -10,10 +10,9 @@ bool \mbox{\hyperlink{class_employee_aaecec17d4bbf95cbe6d212f22743bf7a}{get\+Bus
 void \mbox{\hyperlink{class_employee_a18a5bb955aae9fe74b85647db202a2cf}{set\+Busy}} (bool busy)
 \begin{DoxyCompactList}\small\item\em zet de status van de employee naar true of false \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_employee_aab4c0e1f724ae2ff7161742689dd20cd}{get\+Forklift\+Certificate}} ()
-\begin{DoxyCompactList}\small\item\em functie om te kijken of de employee een forkliftcertificaat heeft. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_employee_ae7fc6f5052ab924618570d358b8adf66}\label{class_employee_ae7fc6f5052ab924618570d358b8adf66}} 
-void {\bfseries set\+Forklift\+Certificate} (bool forklift\+Certificate)
-\item 
+\begin{DoxyCompactList}\small\item\em functie om te kijken of de employee een heftruckcertificaat heeft. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_employee_ae7fc6f5052ab924618570d358b8adf66}{set\+Forklift\+Certificate}} (bool forklift\+Certificate)
+\begin{DoxyCompactList}\small\item\em zet de heftruckcertificaat status van de employee naar true of false. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_employee_ac80d9ee9258b947c7d6b91db8000959d}\label{class_employee_ac80d9ee9258b947c7d6b91db8000959d}} 
 {\bfseries Employee} (std\+::string const name, bool forklift\+Certificate)
 \end{DoxyCompactItemize}
@@ -37,10 +36,10 @@ de busy status van de employee
 
 
 
-functie om te kijken of de employee een forkliftcertificaat heeft. 
+functie om te kijken of de employee een heftruckcertificaat heeft. 
 
 \begin{DoxyReturn}{Returns}
-true als de employee een forkliftcertificaat heeft, false als de employee dat niet heeft. 
+true als de employee een heftruckcertificaat heeft, false als de employee deze niet heeft. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_employee_a72d9305f328548a928929154dab5d2b7}\label{class_employee_a72d9305f328548a928929154dab5d2b7}} 
 \index{Employee@{Employee}!getName@{getName}}
@@ -65,6 +64,21 @@ zet de status van de employee naar true of false
 
 \begin{DoxyParams}{Parameters}
 {\em busy} & boolean om de busy status bij te houden \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_employee_ae7fc6f5052ab924618570d358b8adf66}\label{class_employee_ae7fc6f5052ab924618570d358b8adf66}} 
+\index{Employee@{Employee}!setForkliftCertificate@{setForkliftCertificate}}
+\index{setForkliftCertificate@{setForkliftCertificate}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{setForkliftCertificate()}{setForkliftCertificate()}}
+{\footnotesize\ttfamily void Employee\+::set\+Forklift\+Certificate (\begin{DoxyParamCaption}\item[{bool}]{forklift\+Certificate }\end{DoxyParamCaption})}
+
+
+
+zet de heftruckcertificaat status van de employee naar true of false. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em forklift\+Certificate} & is true als de employee een heftruckcertificaat heeft en false als de employee deze niet heeft. \\
 \hline
 \end{DoxyParams}
 

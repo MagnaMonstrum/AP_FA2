@@ -33,9 +33,11 @@ bool Pallet::takeOne(){
 };
 
 bool Pallet::putOne(){
-    if (this->itemCount)
-    this->itemCount += 1;
-    return true;    
+    if (this->itemCount) {
+        this->itemCount += 1;
+        return true;
+    }
+    return false;
 };
 
 bool Pallet::isEmpty() {
@@ -48,7 +50,7 @@ bool Pallet::isEmpty() {
 }
 
 bool Pallet::isFull() {
-    if (this->itemName != "") {
+    if (this->itemCount == this->itemCapacity) {
         return true;
     }
     else {
