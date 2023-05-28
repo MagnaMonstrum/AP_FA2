@@ -79,15 +79,14 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a72d9305f328548a928929154dab5d2b7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee.html#a72d9305f328548a928929154dab5d2b7">getName</a> ()</td></tr>
-<tr class="memdesc:a72d9305f328548a928929154dab5d2b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Geeft naam van employee.  <a href="class_employee.html#a72d9305f328548a928929154dab5d2b7">More...</a><br /></td></tr>
 <tr class="separator:a72d9305f328548a928929154dab5d2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaecec17d4bbf95cbe6d212f22743bf7a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee.html#aaecec17d4bbf95cbe6d212f22743bf7a">getBusy</a> ()</td></tr>
 <tr class="separator:aaecec17d4bbf95cbe6d212f22743bf7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18a5bb955aae9fe74b85647db202a2cf"><td class="memItemLeft" align="right" valign="top"><a id="a18a5bb955aae9fe74b85647db202a2cf" name="a18a5bb955aae9fe74b85647db202a2cf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setBusy</b> (bool busy)</td></tr>
+<tr class="memitem:a18a5bb955aae9fe74b85647db202a2cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee.html#a18a5bb955aae9fe74b85647db202a2cf">setBusy</a> (bool busy)</td></tr>
+<tr class="memdesc:a18a5bb955aae9fe74b85647db202a2cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">zet de status van de employee naar true of false  <a href="class_employee.html#a18a5bb955aae9fe74b85647db202a2cf">More...</a><br /></td></tr>
 <tr class="separator:a18a5bb955aae9fe74b85647db202a2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab4c0e1f724ae2ff7161742689dd20cd"><td class="memItemLeft" align="right" valign="top"><a id="aab4c0e1f724ae2ff7161742689dd20cd" name="aab4c0e1f724ae2ff7161742689dd20cd"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>getForkliftCertificate</b> ()</td></tr>
+<tr class="memitem:aab4c0e1f724ae2ff7161742689dd20cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee.html#aab4c0e1f724ae2ff7161742689dd20cd">getForkliftCertificate</a> ()</td></tr>
+<tr class="memdesc:aab4c0e1f724ae2ff7161742689dd20cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">functie om te kijken of de employee een forkliftcertificaat heeft.  <a href="class_employee.html#aab4c0e1f724ae2ff7161742689dd20cd">More...</a><br /></td></tr>
 <tr class="separator:aab4c0e1f724ae2ff7161742689dd20cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7fc6f5052ab924618570d358b8adf66"><td class="memItemLeft" align="right" valign="top"><a id="ae7fc6f5052ab924618570d358b8adf66" name="ae7fc6f5052ab924618570d358b8adf66"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setForkliftCertificate</b> (bool forkliftCertificate)</td></tr>
@@ -111,7 +110,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setForkliftCertificat
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>de naam van een employee </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>de busy status van de employee </dd></dl>
+
+</div>
+</div>
+<a id="aab4c0e1f724ae2ff7161742689dd20cd" name="aab4c0e1f724ae2ff7161742689dd20cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab4c0e1f724ae2ff7161742689dd20cd">&#9670;&#160;</a></span>getForkliftCertificate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Employee::getForkliftCertificate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>functie om te kijken of de employee een forkliftcertificaat heeft. </p>
+<dl class="section return"><dt>Returns</dt><dd>true als de employee een forkliftcertificaat heeft, false als de employee dat niet heeft. </dd></dl>
 
 </div>
 </div>
@@ -129,10 +148,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setForkliftCertificat
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Geeft naam van employee. </p>
 <dl class="section return"><dt>Returns</dt><dd>De naam van de employee. <br  />
  </dd></dl>
+
+</div>
+</div>
+<a id="a18a5bb955aae9fe74b85647db202a2cf" name="a18a5bb955aae9fe74b85647db202a2cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18a5bb955aae9fe74b85647db202a2cf">&#9670;&#160;</a></span>setBusy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Employee::setBusy </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>busy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>zet de status van de employee naar true of false </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">busy</td><td>boolean om de busy status bij te houden </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

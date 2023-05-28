@@ -4,15 +4,13 @@
 \begin{DoxyCompactItemize}
 \item 
 std\+::string \mbox{\hyperlink{class_employee_a72d9305f328548a928929154dab5d2b7}{get\+Name}} ()
-\begin{DoxyCompactList}\small\item\em Geeft naam van employee. \end{DoxyCompactList}\item 
+\item 
 bool \mbox{\hyperlink{class_employee_aaecec17d4bbf95cbe6d212f22743bf7a}{get\+Busy}} ()
 \item 
-\mbox{\Hypertarget{class_employee_a18a5bb955aae9fe74b85647db202a2cf}\label{class_employee_a18a5bb955aae9fe74b85647db202a2cf}} 
-void {\bfseries set\+Busy} (bool busy)
-\item 
-\mbox{\Hypertarget{class_employee_aab4c0e1f724ae2ff7161742689dd20cd}\label{class_employee_aab4c0e1f724ae2ff7161742689dd20cd}} 
-bool {\bfseries get\+Forklift\+Certificate} ()
-\item 
+void \mbox{\hyperlink{class_employee_a18a5bb955aae9fe74b85647db202a2cf}{set\+Busy}} (bool busy)
+\begin{DoxyCompactList}\small\item\em zet de status van de employee naar true of false \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_employee_aab4c0e1f724ae2ff7161742689dd20cd}{get\+Forklift\+Certificate}} ()
+\begin{DoxyCompactList}\small\item\em functie om te kijken of de employee een forkliftcertificaat heeft. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_employee_ae7fc6f5052ab924618570d358b8adf66}\label{class_employee_ae7fc6f5052ab924618570d358b8adf66}} 
 void {\bfseries set\+Forklift\+Certificate} (bool forklift\+Certificate)
 \item 
@@ -29,7 +27,20 @@ void {\bfseries set\+Forklift\+Certificate} (bool forklift\+Certificate)
 {\footnotesize\ttfamily bool Employee\+::get\+Busy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \begin{DoxyReturn}{Returns}
-de naam van een employee 
+de busy status van de employee 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_employee_aab4c0e1f724ae2ff7161742689dd20cd}\label{class_employee_aab4c0e1f724ae2ff7161742689dd20cd}} 
+\index{Employee@{Employee}!getForkliftCertificate@{getForkliftCertificate}}
+\index{getForkliftCertificate@{getForkliftCertificate}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{getForkliftCertificate()}{getForkliftCertificate()}}
+{\footnotesize\ttfamily bool Employee\+::get\+Forklift\+Certificate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+functie om te kijken of de employee een forkliftcertificaat heeft. 
+
+\begin{DoxyReturn}{Returns}
+true als de employee een forkliftcertificaat heeft, false als de employee dat niet heeft. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_employee_a72d9305f328548a928929154dab5d2b7}\label{class_employee_a72d9305f328548a928929154dab5d2b7}} 
 \index{Employee@{Employee}!getName@{getName}}
@@ -37,14 +48,25 @@ de naam van een employee
 \doxysubsubsection{\texorpdfstring{getName()}{getName()}}
 {\footnotesize\ttfamily std\+::string Employee\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-
-
-Geeft naam van employee. 
-
 \begin{DoxyReturn}{Returns}
 De naam van de employee. ~\newline
  
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_employee_a18a5bb955aae9fe74b85647db202a2cf}\label{class_employee_a18a5bb955aae9fe74b85647db202a2cf}} 
+\index{Employee@{Employee}!setBusy@{setBusy}}
+\index{setBusy@{setBusy}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{setBusy()}{setBusy()}}
+{\footnotesize\ttfamily void Employee\+::set\+Busy (\begin{DoxyParamCaption}\item[{bool}]{busy }\end{DoxyParamCaption})}
+
+
+
+zet de status van de employee naar true of false 
+
+
+\begin{DoxyParams}{Parameters}
+{\em busy} & boolean om de busy status bij te houden \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
