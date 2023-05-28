@@ -109,14 +109,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8a8f03904881997a9a38c2efa52091e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">methode om te checken of een pallet leeg is.  <a href="class_pallet.html#a8a8f03904881997a9a38c2efa52091e1">More...</a><br /></td></tr>
 <tr class="separator:a8a8f03904881997a9a38c2efa52091e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8740362936aca41a95a96165b80ef77"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pallet.html#ac8740362936aca41a95a96165b80ef77">isFull</a> ()</td></tr>
-<tr class="memdesc:ac8740362936aca41a95a96165b80ef77"><td class="mdescLeft">&#160;</td><td class="mdescRight">methode om te checken of een pallet niet leeg is.  <a href="class_pallet.html#ac8740362936aca41a95a96165b80ef77">More...</a><br /></td></tr>
+<tr class="memdesc:ac8740362936aca41a95a96165b80ef77"><td class="mdescLeft">&#160;</td><td class="mdescRight">methode om te checken of een pallet vol is.  <a href="class_pallet.html#ac8740362936aca41a95a96165b80ef77">More...</a><br /></td></tr>
 <tr class="separator:ac8740362936aca41a95a96165b80ef77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec20566b32678e9f04a749d2162592cc"><td class="memItemLeft" align="right" valign="top"><a id="aec20566b32678e9f04a749d2162592cc" name="aec20566b32678e9f04a749d2162592cc"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Pallet</b> (std::string itemName, int itemCapacity, int itemCount)</td></tr>
 <tr class="separator:aec20566b32678e9f04a749d2162592cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3bd8f346d594ebb325bd6bb53389afd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_container.html#ae3bd8f346d594ebb325bd6bb53389afd">isEmpty</a> ()=0</td></tr>
+<tr class="memdesc:ae3bd8f346d594ebb325bd6bb53389afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual methode om te kunnen gebruiken in <a class="el" href="class_shelf.html">Shelf</a> en <a class="el" href="class_pallet.html">Pallet</a>.  <a href="classi_container.html#ae3bd8f346d594ebb325bd6bb53389afd">More...</a><br /></td></tr>
 <tr class="separator:ae3bd8f346d594ebb325bd6bb53389afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8298795f9afbaea3159865e71cc189c5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classi_container.html#a8298795f9afbaea3159865e71cc189c5">isFull</a> ()=0</td></tr>
+<tr class="memdesc:a8298795f9afbaea3159865e71cc189c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual methode om te kunnen gebruiken in <a class="el" href="class_shelf.html">Shelf</a> en <a class="el" href="class_pallet.html">Pallet</a>. <br  />
+  <a href="classi_container.html#a8298795f9afbaea3159865e71cc189c5">More...</a><br /></td></tr>
 <tr class="separator:a8298795f9afbaea3159865e71cc189c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -206,7 +209,7 @@ Public Member Functions</h2></td></tr>
 <p>methode om te checken of een pallet leeg is. </p>
 <dl class="section return"><dt>Returns</dt><dd>true als de itemCount van de pallet leeg is. false als dat niet zo is </dd></dl>
 
-<p>Implements <a class="el" href="classi_container.html">iContainer</a>.</p>
+<p>Implements <a class="el" href="classi_container.html#ae3bd8f346d594ebb325bd6bb53389afd">iContainer</a>.</p>
 
 </div>
 </div>
@@ -233,10 +236,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>methode om te checken of een pallet niet leeg is. </p>
-<dl class="section return"><dt>Returns</dt><dd>true als de pallet een itemName heeft (dit betekent dat deze is ingenomen door een item). false als dat niet zo is </dd></dl>
+<p>methode om te checken of een pallet vol is. </p>
+<dl class="section return"><dt>Returns</dt><dd>true als de capaciteit an de pallet gelijk staat aan de hoeveelheid items op de pallet. </dd></dl>
 
-<p>Implements <a class="el" href="classi_container.html">iContainer</a>.</p>
+<p>Implements <a class="el" href="classi_container.html#a8298795f9afbaea3159865e71cc189c5">iContainer</a>.</p>
 
 </div>
 </div>

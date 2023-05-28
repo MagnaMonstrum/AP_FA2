@@ -27,6 +27,12 @@ class Warehouse
         /// @return true als het sorteren gelukt is.
         /// @details maakt gebruik van de swapPalles methode en simpel sorteer algoritme om de pallets te sorteren.
         bool rearrangeShelf(Shelf& shelf);
+
+        /// @brief methode om een bepaalde hoeveelheid items van een shelf te verwijderen.
+        /// @param itemName naam van de item waar we naar zoeken.
+        /// @param itemCount hoeveelheid die we willen hebben.
+        /// @return true als het gelukt is om de benodigde hoeveelheid van de shelf te pakken.
+        /// @details in deze methode wordt door middel van nested loops iedere pallet gechecket om de benodigde hoeveelheid van het meegegeven item te krijgen. 
         bool pickItems(std::string itemName, int itemCount);
         std::vector<Shelf> getShelves();
         Warehouse();

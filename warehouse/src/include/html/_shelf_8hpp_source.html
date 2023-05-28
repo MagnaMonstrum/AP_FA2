@@ -84,15 +84,23 @@ $(function() {
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        std::array&lt;Pallet, 4&gt; pallets;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        std::array&lt;bool, 4&gt; palletStatus = {}; <span class="comment">// Make this the new way of checking status</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        std::array&lt;bool, 4&gt; getSlotStatus();</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordtype">bool</span> swapPallet(<span class="keywordtype">int</span> index0, <span class="keywordtype">int</span> index1);  </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordtype">bool</span> isEmpty();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordtype">bool</span> isFull();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="comment">//std::array&lt;Pallet, 4&gt; getPallet();</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_class" href="class_shelf.html">Shelf</a>();</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        std::array&lt;bool, 4&gt; palletStatus = {};</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_shelf.html#af30fa8ff2aa4e06dae8d758f8e39ddd6">   17</a></span>        std::array&lt;bool, 4&gt; <a class="code hl_function" href="class_shelf.html#af30fa8ff2aa4e06dae8d758f8e39ddd6">getSlotStatus</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_shelf.html#ad1c5b05280be8dfff6a196117bd6b95d">   23</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_shelf.html#ad1c5b05280be8dfff6a196117bd6b95d">swapPallet</a>(<span class="keywordtype">int</span> index0, <span class="keywordtype">int</span> index1); </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_shelf.html#a0def36022244b8e1083305a2f4d6d7e0">   27</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_shelf.html#a0def36022244b8e1083305a2f4d6d7e0">isEmpty</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_shelf.html#a830a3fdcbb89181aaaf6ed719aab7d8c">   31</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_shelf.html#a830a3fdcbb89181aaaf6ed719aab7d8c">isFull</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_class" href="class_shelf.html">Shelf</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
 <div class="ttc" id="aclass_shelf_html"><div class="ttname"><a href="class_shelf.html">Shelf</a></div><div class="ttdef"><b>Definition:</b> Shelf.hpp:10</div></div>
+<div class="ttc" id="aclass_shelf_html_a0def36022244b8e1083305a2f4d6d7e0"><div class="ttname"><a href="class_shelf.html#a0def36022244b8e1083305a2f4d6d7e0">Shelf::isEmpty</a></div><div class="ttdeci">bool isEmpty()</div><div class="ttdoc">deze methode maakt gebruik van de getslotStatus methode om te checken of alle plekken in een shelf le...</div></div>
+<div class="ttc" id="aclass_shelf_html_a830a3fdcbb89181aaaf6ed719aab7d8c"><div class="ttname"><a href="class_shelf.html#a830a3fdcbb89181aaaf6ed719aab7d8c">Shelf::isFull</a></div><div class="ttdeci">bool isFull()</div><div class="ttdoc">deze methode maakt gebruik van de getslotStatus methode om te checken of alle plekken in een shelf le...</div></div>
+<div class="ttc" id="aclass_shelf_html_ad1c5b05280be8dfff6a196117bd6b95d"><div class="ttname"><a href="class_shelf.html#ad1c5b05280be8dfff6a196117bd6b95d">Shelf::swapPallet</a></div><div class="ttdeci">bool swapPallet(int index0, int index1)</div><div class="ttdoc">methode om pallets op 2 verschillende indexen van plaats te wisselen.</div></div>
+<div class="ttc" id="aclass_shelf_html_af30fa8ff2aa4e06dae8d758f8e39ddd6"><div class="ttname"><a href="class_shelf.html#af30fa8ff2aa4e06dae8d758f8e39ddd6">Shelf::getSlotStatus</a></div><div class="ttdeci">std::array&lt; bool, 4 &gt; getSlotStatus()</div><div class="ttdoc">methode die de status van de pallets in de shelf returned, of deze vol zijn of niet.</div></div>
 <div class="ttc" id="aclassi_container_html"><div class="ttname"><a href="classi_container.html">iContainer</a></div><div class="ttdef"><b>Definition:</b> iContainer.hpp:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

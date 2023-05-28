@@ -3,18 +3,14 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_warehouse_ad9b82ec22ca263eb15fc0ed9521e06c3}\label{class_warehouse_ad9b82ec22ca263eb15fc0ed9521e06c3}} 
-void {\bfseries add\+Employee} (\mbox{\hyperlink{class_employee}{Employee}} employee)
-\item 
-\mbox{\Hypertarget{class_warehouse_a0fd09736bf4efc34a16ded6552677a50}\label{class_warehouse_a0fd09736bf4efc34a16ded6552677a50}} 
-void {\bfseries add\+Shelf} (\mbox{\hyperlink{class_shelf}{Shelf}} shelf)
-\item 
-\mbox{\Hypertarget{class_warehouse_a30b36b94053660501e8620650462586f}\label{class_warehouse_a30b36b94053660501e8620650462586f}} 
-bool {\bfseries rearrange\+Shelf} (\mbox{\hyperlink{class_shelf}{Shelf}} \&shelf)
-\item 
-\mbox{\Hypertarget{class_warehouse_a41bff16104288af125c7e7dcc02f39af}\label{class_warehouse_a41bff16104288af125c7e7dcc02f39af}} 
-bool {\bfseries pick\+Items} (std\+::string item\+Name, int item\+Count)
-\item 
+void \mbox{\hyperlink{class_warehouse_ad9b82ec22ca263eb15fc0ed9521e06c3}{add\+Employee}} (\mbox{\hyperlink{class_employee}{Employee}} employee)
+\begin{DoxyCompactList}\small\item\em methode om een employee toe te voegen aan een warehuis. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_warehouse_a0fd09736bf4efc34a16ded6552677a50}{add\+Shelf}} (\mbox{\hyperlink{class_shelf}{Shelf}} shelf)
+\begin{DoxyCompactList}\small\item\em methode om een shelf toe te voegen aan een warehuis. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_warehouse_a30b36b94053660501e8620650462586f}{rearrange\+Shelf}} (\mbox{\hyperlink{class_shelf}{Shelf}} \&shelf)
+\begin{DoxyCompactList}\small\item\em methode om de pallets in een shelf te sorteren van minst aantal items naar meest aantal items. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_warehouse_a41bff16104288af125c7e7dcc02f39af}{pick\+Items}} (std\+::string item\+Name, int item\+Count)
+\begin{DoxyCompactList}\small\item\em methode om een bepaalde hoeveelheid items van een shelf te verwijderen. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_warehouse_a132191c434a9b0d48fd72098d6a0393e}\label{class_warehouse_a132191c434a9b0d48fd72098d6a0393e}} 
 std\+::vector$<$ \mbox{\hyperlink{class_shelf}{Shelf}} $>$ {\bfseries get\+Shelves} ()
 \end{DoxyCompactItemize}
@@ -23,11 +19,83 @@ std\+::vector$<$ \mbox{\hyperlink{class_shelf}{Shelf}} $>$ {\bfseries get\+Shelv
 \item 
 \mbox{\Hypertarget{class_warehouse_ac309e217668c8f2988f3d04f58e9b9dc}\label{class_warehouse_ac309e217668c8f2988f3d04f58e9b9dc}} 
 std\+::vector$<$ \mbox{\hyperlink{class_employee}{Employee}} $>$ {\bfseries employee\+List} = \{\}
-\item 
+\begin{DoxyCompactList}\small\item\em vector om bij te houden welke employees er werken in het warehuis. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_warehouse_a4f0296952fe224c1d5a09e16e2689e47}\label{class_warehouse_a4f0296952fe224c1d5a09e16e2689e47}} 
 std\+::vector$<$ \mbox{\hyperlink{class_shelf}{Shelf}} $>$ {\bfseries shelves} = \{\}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em vector om bij te houden welke shelfs er zijn in het warehuis. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_warehouse_ad9b82ec22ca263eb15fc0ed9521e06c3}\label{class_warehouse_ad9b82ec22ca263eb15fc0ed9521e06c3}} 
+\index{Warehouse@{Warehouse}!addEmployee@{addEmployee}}
+\index{addEmployee@{addEmployee}!Warehouse@{Warehouse}}
+\doxysubsubsection{\texorpdfstring{addEmployee()}{addEmployee()}}
+{\footnotesize\ttfamily void Warehouse\+::add\+Employee (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_employee}{Employee}}}]{employee }\end{DoxyParamCaption})}
+
+
+
+methode om een employee toe te voegen aan een warehuis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em employee} & de employee die we willen toevoegen. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_warehouse_a0fd09736bf4efc34a16ded6552677a50}\label{class_warehouse_a0fd09736bf4efc34a16ded6552677a50}} 
+\index{Warehouse@{Warehouse}!addShelf@{addShelf}}
+\index{addShelf@{addShelf}!Warehouse@{Warehouse}}
+\doxysubsubsection{\texorpdfstring{addShelf()}{addShelf()}}
+{\footnotesize\ttfamily void Warehouse\+::add\+Shelf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shelf}{Shelf}}}]{shelf }\end{DoxyParamCaption})}
+
+
+
+methode om een shelf toe te voegen aan een warehuis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em employee} & de shelf die we willen toevoegen. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_warehouse_a41bff16104288af125c7e7dcc02f39af}\label{class_warehouse_a41bff16104288af125c7e7dcc02f39af}} 
+\index{Warehouse@{Warehouse}!pickItems@{pickItems}}
+\index{pickItems@{pickItems}!Warehouse@{Warehouse}}
+\doxysubsubsection{\texorpdfstring{pickItems()}{pickItems()}}
+{\footnotesize\ttfamily bool Warehouse\+::pick\+Items (\begin{DoxyParamCaption}\item[{std\+::string}]{item\+Name,  }\item[{int}]{item\+Count }\end{DoxyParamCaption})}
+
+
+
+methode om een bepaalde hoeveelheid items van een shelf te verwijderen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Name} & naam van de item waar we naar zoeken. \\
+\hline
+{\em item\+Count} & hoeveelheid die we willen hebben. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true als het gelukt is om de benodigde hoeveelheid van de shelf te pakken.
+\end{DoxyReturn}
+in deze methode wordt door middel van nested loops iedere pallet gechecket om de benodigde hoeveelheid van het meegegeven item te krijgen. ~\newline
+ \mbox{\Hypertarget{class_warehouse_a30b36b94053660501e8620650462586f}\label{class_warehouse_a30b36b94053660501e8620650462586f}} 
+\index{Warehouse@{Warehouse}!rearrangeShelf@{rearrangeShelf}}
+\index{rearrangeShelf@{rearrangeShelf}!Warehouse@{Warehouse}}
+\doxysubsubsection{\texorpdfstring{rearrangeShelf()}{rearrangeShelf()}}
+{\footnotesize\ttfamily bool Warehouse\+::rearrange\+Shelf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shelf}{Shelf}} \&}]{shelf }\end{DoxyParamCaption})}
+
+
+
+methode om de pallets in een shelf te sorteren van minst aantal items naar meest aantal items. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shelf} & de shelf waarvan de pallets gesorteerd moeten worden. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true als het sorteren gelukt is.
+\end{DoxyReturn}
+maakt gebruik van de swap\+Palles methode en simpel sorteer algoritme om de pallets te sorteren. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

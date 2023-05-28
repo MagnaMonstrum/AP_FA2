@@ -24,7 +24,7 @@ bool \mbox{\hyperlink{class_pallet_a94d718d10bc43554cfd7e9e35c13e43b}{put\+One}}
 bool \mbox{\hyperlink{class_pallet_a8a8f03904881997a9a38c2efa52091e1}{is\+Empty}} ()
 \begin{DoxyCompactList}\small\item\em methode om te checken of een pallet leeg is. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_pallet_ac8740362936aca41a95a96165b80ef77}{is\+Full}} ()
-\begin{DoxyCompactList}\small\item\em methode om te checken of een pallet niet leeg is. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em methode om te checken of een pallet vol is. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_pallet_aec20566b32678e9f04a749d2162592cc}\label{class_pallet_aec20566b32678e9f04a749d2162592cc}} 
 {\bfseries Pallet} (std\+::string item\+Name, int item\+Capacity, int item\+Count)
 \end{DoxyCompactItemize}
@@ -85,7 +85,7 @@ true als de item\+Count van de pallet leeg is. false als dat niet zo is
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classi_container}{i\+Container}}.
+Implements \mbox{\hyperlink{classi_container_ae3bd8f346d594ebb325bd6bb53389afd}{i\+Container}}.
 
 \mbox{\Hypertarget{class_pallet_ac8740362936aca41a95a96165b80ef77}\label{class_pallet_ac8740362936aca41a95a96165b80ef77}} 
 \index{Pallet@{Pallet}!isFull@{isFull}}
@@ -95,14 +95,14 @@ Implements \mbox{\hyperlink{classi_container}{i\+Container}}.
 
 
 
-methode om te checken of een pallet niet leeg is. 
+methode om te checken of een pallet vol is. 
 
 \begin{DoxyReturn}{Returns}
-true als de pallet een item\+Name heeft (dit betekent dat deze is ingenomen door een item). false als dat niet zo is 
+true als de capaciteit an de pallet gelijk staat aan de hoeveelheid items op de pallet. 
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classi_container}{i\+Container}}.
+Implements \mbox{\hyperlink{classi_container_a8298795f9afbaea3159865e71cc189c5}{i\+Container}}.
 
 \mbox{\Hypertarget{class_pallet_a94d718d10bc43554cfd7e9e35c13e43b}\label{class_pallet_a94d718d10bc43554cfd7e9e35c13e43b}} 
 \index{Pallet@{Pallet}!putOne@{putOne}}

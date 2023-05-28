@@ -1,21 +1,24 @@
 var indexSectionsWithContent =
 {
-  0: "egiprstw",
+  0: "aegiprstw",
   1: "eipsw",
-  2: "giprst"
+  2: "agiprst",
+  3: "es"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "functions"
+  2: "functions",
+  3: "variables"
 };
 
 var indexSectionLabels =
 {
   0: "All",
   1: "Classes",
-  2: "Functions"
+  2: "Functions",
+  3: "Variables"
 };
 

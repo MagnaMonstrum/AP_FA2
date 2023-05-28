@@ -9,16 +9,14 @@ Inheritance diagram for Shelf\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_shelf_af30fa8ff2aa4e06dae8d758f8e39ddd6}\label{class_shelf_af30fa8ff2aa4e06dae8d758f8e39ddd6}} 
-std\+::array$<$ bool, 4 $>$ {\bfseries get\+Slot\+Status} ()
-\item 
-\mbox{\Hypertarget{class_shelf_ad1c5b05280be8dfff6a196117bd6b95d}\label{class_shelf_ad1c5b05280be8dfff6a196117bd6b95d}} 
-bool {\bfseries swap\+Pallet} (int index0, int index1)
-\item 
+std\+::array$<$ bool, 4 $>$ \mbox{\hyperlink{class_shelf_af30fa8ff2aa4e06dae8d758f8e39ddd6}{get\+Slot\+Status}} ()
+\begin{DoxyCompactList}\small\item\em methode die de status van de pallets in de shelf returned, of deze vol zijn of niet. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_shelf_ad1c5b05280be8dfff6a196117bd6b95d}{swap\+Pallet}} (int index0, int index1)
+\begin{DoxyCompactList}\small\item\em methode om pallets op 2 verschillende indexen van plaats te wisselen. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_shelf_a0def36022244b8e1083305a2f4d6d7e0}{is\+Empty}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em deze methode maakt gebruik van de getslot\+Status methode om te checken of alle plekken in een shelf leeg zijn. Dit wordt gedaan door te kijken naar een andere lijst die altijd leeg is (y) en deze te vergelijken met de huidige status. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_shelf_a830a3fdcbb89181aaaf6ed719aab7d8c}{is\+Full}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em deze methode maakt gebruik van de getslot\+Status methode om te checken of alle plekken in een shelf leeg zijn. Dit wordt gedaan door te kijken naar een andere lijst die altijd vol is (y) en deze te vergelijken met de huidige status. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -31,6 +29,19 @@ std\+::array$<$ bool, 4 $>$ {\bfseries pallet\+Status} = \{\}
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_shelf_af30fa8ff2aa4e06dae8d758f8e39ddd6}\label{class_shelf_af30fa8ff2aa4e06dae8d758f8e39ddd6}} 
+\index{Shelf@{Shelf}!getSlotStatus@{getSlotStatus}}
+\index{getSlotStatus@{getSlotStatus}!Shelf@{Shelf}}
+\doxysubsubsection{\texorpdfstring{getSlotStatus()}{getSlotStatus()}}
+{\footnotesize\ttfamily std\+::array$<$ bool, 4 $>$ Shelf\+::get\+Slot\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+methode die de status van de pallets in de shelf returned, of deze vol zijn of niet. 
+
+\begin{DoxyReturn}{Returns}
+een array van booleans, ieder boolean is true als deze vol is en false als dat niet zo is. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_shelf_a0def36022244b8e1083305a2f4d6d7e0}\label{class_shelf_a0def36022244b8e1083305a2f4d6d7e0}} 
 \index{Shelf@{Shelf}!isEmpty@{isEmpty}}
 \index{isEmpty@{isEmpty}!Shelf@{Shelf}}
@@ -39,7 +50,14 @@ std\+::array$<$ bool, 4 $>$ {\bfseries pallet\+Status} = \{\}
 
 
 
-Implements \mbox{\hyperlink{classi_container}{i\+Container}}.
+deze methode maakt gebruik van de getslot\+Status methode om te checken of alle plekken in een shelf leeg zijn. Dit wordt gedaan door te kijken naar een andere lijst die altijd leeg is (y) en deze te vergelijken met de huidige status. 
+
+\begin{DoxyReturn}{Returns}
+als de lijst leeg is dan wordt true gereturned zo niet dan wordt false gereturned. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classi_container_ae3bd8f346d594ebb325bd6bb53389afd}{i\+Container}}.
 
 \mbox{\Hypertarget{class_shelf_a830a3fdcbb89181aaaf6ed719aab7d8c}\label{class_shelf_a830a3fdcbb89181aaaf6ed719aab7d8c}} 
 \index{Shelf@{Shelf}!isFull@{isFull}}
@@ -49,8 +67,35 @@ Implements \mbox{\hyperlink{classi_container}{i\+Container}}.
 
 
 
-Implements \mbox{\hyperlink{classi_container}{i\+Container}}.
+deze methode maakt gebruik van de getslot\+Status methode om te checken of alle plekken in een shelf leeg zijn. Dit wordt gedaan door te kijken naar een andere lijst die altijd vol is (y) en deze te vergelijken met de huidige status. 
 
+\begin{DoxyReturn}{Returns}
+als de lijst vol is dan wordt true gereturned zo niet dan wordt false gereturned. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classi_container_a8298795f9afbaea3159865e71cc189c5}{i\+Container}}.
+
+\mbox{\Hypertarget{class_shelf_ad1c5b05280be8dfff6a196117bd6b95d}\label{class_shelf_ad1c5b05280be8dfff6a196117bd6b95d}} 
+\index{Shelf@{Shelf}!swapPallet@{swapPallet}}
+\index{swapPallet@{swapPallet}!Shelf@{Shelf}}
+\doxysubsubsection{\texorpdfstring{swapPallet()}{swapPallet()}}
+{\footnotesize\ttfamily bool Shelf\+::swap\+Pallet (\begin{DoxyParamCaption}\item[{int}]{index0,  }\item[{int}]{index1 }\end{DoxyParamCaption})}
+
+
+
+methode om pallets op 2 verschillende indexen van plaats te wisselen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index0} & int om de index van de eerste pallet de we willen hebben te bewaren. \\
+\hline
+{\em index1} & int om de index van de tweede pallet de we willen hebben te bewaren. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true als het gelukt om de pallets om te wisselen van plek. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
