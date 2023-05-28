@@ -2,7 +2,6 @@
 #include "..\src\include\Pallet.hpp"
 #include <iostream>
 
-
 bool Shelf::isEmpty() {
     for (int i = 0; i < this->pallets.size(); i++) {
         if (!this->pallets[i].isEmpty()) {
