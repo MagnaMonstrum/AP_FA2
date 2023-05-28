@@ -80,30 +80,32 @@ $(function() {
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_pallet.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="class_pallet.html">Pallet</a> : <span class="keyword">public</span> <a class="code hl_class" href="classi_container.html">iContainer</a></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="keyword">mutable</span> <span class="keywordtype">int</span> itemCount;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="keyword">mutable</span> std::string itemName;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keyword">mutable</span> <span class="keywordtype">int</span> itemCapacity;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_pallet.html#a5dd9952545953a756c9facf8a6865b13">   16</a></span>        std::string <a class="code hl_function" href="class_pallet.html#a5dd9952545953a756c9facf8a6865b13">getItemName</a>();</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="keyword">mutable</span> <span class="keywordtype">int</span> itemCount;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keyword">mutable</span> std::string itemName;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">mutable</span> <span class="keywordtype">int</span> itemCapacity;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_pallet.html#a6fb72d96f65cc75e7b29beb386a255dc">   20</a></span>        <span class="keywordtype">int</span> <a class="code hl_function" href="class_pallet.html#a6fb72d96f65cc75e7b29beb386a255dc">getItemCount</a>();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_pallet.html#aa8e3b0089ab3b1ccc5cc68df88133da8">   24</a></span>        <span class="keywordtype">int</span> <a class="code hl_function" href="class_pallet.html#aa8e3b0089ab3b1ccc5cc68df88133da8">getRemainingSpace</a>();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_pallet.html#ae274fa61722357a8f0adcb5a569ff9fc">   30</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_pallet.html#ae274fa61722357a8f0adcb5a569ff9fc">reallocateEmptyPallet</a>(std::string itemName, <span class="keywordtype">int</span> itemCapacity);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_pallet.html#a30a95ee46e5459bbc6c61ffd76e084ba">   34</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_pallet.html#a30a95ee46e5459bbc6c61ffd76e084ba">takeOne</a>();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_pallet.html#a94d718d10bc43554cfd7e9e35c13e43b">   38</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_pallet.html#a94d718d10bc43554cfd7e9e35c13e43b">putOne</a>();</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_pallet.html#a8a8f03904881997a9a38c2efa52091e1">   42</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_pallet.html#a8a8f03904881997a9a38c2efa52091e1">isEmpty</a>();</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_pallet.html#ac8740362936aca41a95a96165b80ef77">   46</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_pallet.html#ac8740362936aca41a95a96165b80ef77">isFull</a>();</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_class" href="class_pallet.html">Pallet</a>(std::string itemName, <span class="keywordtype">int</span> itemCapacity, <span class="keywordtype">int</span> itemCount);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_class" href="class_pallet.html">Pallet</a>();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_pallet.html#a5dd9952545953a756c9facf8a6865b13">   21</a></span>        std::string <a class="code hl_function" href="class_pallet.html#a5dd9952545953a756c9facf8a6865b13">getItemName</a>();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_pallet.html#a6fb72d96f65cc75e7b29beb386a255dc">   25</a></span>        <span class="keywordtype">int</span> <a class="code hl_function" href="class_pallet.html#a6fb72d96f65cc75e7b29beb386a255dc">getItemCount</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_pallet.html#aa8e3b0089ab3b1ccc5cc68df88133da8">   29</a></span>        <span class="keywordtype">int</span> <a class="code hl_function" href="class_pallet.html#aa8e3b0089ab3b1ccc5cc68df88133da8">getRemainingSpace</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_pallet.html#ae274fa61722357a8f0adcb5a569ff9fc">   35</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_pallet.html#ae274fa61722357a8f0adcb5a569ff9fc">reallocateEmptyPallet</a>(std::string itemName, <span class="keywordtype">int</span> itemCapacity);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_pallet.html#a30a95ee46e5459bbc6c61ffd76e084ba">   39</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_pallet.html#a30a95ee46e5459bbc6c61ffd76e084ba">takeOne</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_pallet.html#a94d718d10bc43554cfd7e9e35c13e43b">   43</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_pallet.html#a94d718d10bc43554cfd7e9e35c13e43b">putOne</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_pallet.html#a8a8f03904881997a9a38c2efa52091e1">   47</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_pallet.html#a8a8f03904881997a9a38c2efa52091e1">isEmpty</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_pallet.html#ac8740362936aca41a95a96165b80ef77">   51</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_pallet.html#ac8740362936aca41a95a96165b80ef77">isFull</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <a class="code hl_class" href="class_pallet.html">Pallet</a>(std::string itemName, <span class="keywordtype">int</span> itemCapacity, <span class="keywordtype">int</span> itemCount);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_class" href="class_pallet.html">Pallet</a>();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>};</div>
 <div class="ttc" id="aclass_pallet_html"><div class="ttname"><a href="class_pallet.html">Pallet</a></div><div class="ttdef"><b>Definition:</b> Pallet.hpp:7</div></div>
 <div class="ttc" id="aclass_pallet_html_a30a95ee46e5459bbc6c61ffd76e084ba"><div class="ttname"><a href="class_pallet.html#a30a95ee46e5459bbc6c61ffd76e084ba">Pallet::takeOne</a></div><div class="ttdeci">bool takeOne()</div><div class="ttdoc">methode om 1 item van de hoeveelheid items op de pallet af te halen.</div></div>
 <div class="ttc" id="aclass_pallet_html_a5dd9952545953a756c9facf8a6865b13"><div class="ttname"><a href="class_pallet.html#a5dd9952545953a756c9facf8a6865b13">Pallet::getItemName</a></div><div class="ttdeci">std::string getItemName()</div><div class="ttdoc">methode om de naam van de item waarmee pallet gevuld is te returnen.</div></div>

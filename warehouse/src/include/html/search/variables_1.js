@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['shelves_0',['shelves',['../class_warehouse.html#a4f0296952fe224c1d5a09e16e2689e47',1,'Warehouse']]]
+  ['pallets_0',['pallets',['../class_shelf.html#ad4cbb2fbb9d6064e01213b9667db1b8d',1,'Shelf']]]
 ];
